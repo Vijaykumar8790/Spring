@@ -1,16 +1,6 @@
 pipeline {
     agent any
-    
-    stages {
-        
-        stage('Test') {
-            steps {
-                // Replace this with your actual test commands or scripts
-                sh 'echo "Running tests..."'
-                sh 'mvn test'  // Example: Runs Maven tests, adjust as per your project
-            }
-        }
-    }
+
     
     post {
         success {
